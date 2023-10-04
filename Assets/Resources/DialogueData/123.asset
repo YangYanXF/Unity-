@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: 123
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - baseNodeGuid: 4c9b4845-1249-4688-8dcb-ff95ab6ae466
+    portName: Next
+    targetNodeGuid: da8f8fd1-f99b-4eee-b818-bbd46db4a45a
+  - baseNodeGuid: da8f8fd1-f99b-4eee-b818-bbd46db4a45a
+    portName: "\u5206\u652F1"
+    targetNodeGuid: 48a28b58-6065-43b8-ae1a-d2b8a5ed0ea1
+  - baseNodeGuid: da8f8fd1-f99b-4eee-b818-bbd46db4a45a
+    portName: "\u5206\u652F2"
+    targetNodeGuid: 7f9966a2-48f8-4079-9c61-b76ad2fd4920
+  - baseNodeGuid: 48a28b58-6065-43b8-ae1a-d2b8a5ed0ea1
+    portName: Option 1
+    targetNodeGuid: e8255ffb-8ee8-45be-83d1-93b6ccf91e94
+  - baseNodeGuid: 7f9966a2-48f8-4079-9c61-b76ad2fd4920
+    portName: Option 1
+    targetNodeGuid: 98a03f89-7a36-4d16-9b7e-f99ff97fb76d
+  - baseNodeGuid: 98a03f89-7a36-4d16-9b7e-f99ff97fb76d
+    portName: Option 1
+    targetNodeGuid: 55bf942a-bbf3-439c-9b78-c6f9364716a4
+  - baseNodeGuid: e8255ffb-8ee8-45be-83d1-93b6ccf91e94
+    portName: "\u5206\u652F1-1"
+    targetNodeGuid: 46106424-ef3e-4b61-b08a-2f4d9342ca11
+  - baseNodeGuid: e8255ffb-8ee8-45be-83d1-93b6ccf91e94
+    portName: "\u5206\u652F1-2"
+    targetNodeGuid: c5bb0873-d17b-47cc-a921-c22d00b68ea2
+  - baseNodeGuid: 46106424-ef3e-4b61-b08a-2f4d9342ca11
+    portName: Option 1
+    targetNodeGuid: 55bf942a-bbf3-439c-9b78-c6f9364716a4
+  - baseNodeGuid: c5bb0873-d17b-47cc-a921-c22d00b68ea2
+    portName: Option 1
+    targetNodeGuid: 55bf942a-bbf3-439c-9b78-c6f9364716a4
+  DialogueNodeData:
+  - guid: da8f8fd1-f99b-4eee-b818-bbd46db4a45a
+    dialogueText: "\u5F00\u59CB\u5BF9\u8BDD"
+    position: {x: 214, y: 180}
+  - guid: 48a28b58-6065-43b8-ae1a-d2b8a5ed0ea1
+    dialogueText: "\u5206\u652F1 \u5185\u5BB91"
+    position: {x: 444, y: 132}
+  - guid: 7f9966a2-48f8-4079-9c61-b76ad2fd4920
+    dialogueText: "\u5206\u652F2 \u5185\u5BB91"
+    position: {x: 444, y: 253}
+  - guid: 98a03f89-7a36-4d16-9b7e-f99ff97fb76d
+    dialogueText: "\u5206\u652F2 \u5185\u5BB92"
+    position: {x: 680, y: 253}
+  - guid: e8255ffb-8ee8-45be-83d1-93b6ccf91e94
+    dialogueText: "\u5206\u652F1 \u5185\u5BB92"
+    position: {x: 680, y: 98}
+  - guid: 46106424-ef3e-4b61-b08a-2f4d9342ca11
+    dialogueText: "\u5206\u652F1-1 \u5185\u5BB91"
+    position: {x: 915, y: 1}
+  - guid: c5bb0873-d17b-47cc-a921-c22d00b68ea2
+    dialogueText: "\u5206\u652F1-2 \u5185\u5BB91"
+    position: {x: 924, y: 144}
+  - guid: 55bf942a-bbf3-439c-9b78-c6f9364716a4
+    dialogueText: "\u7ED3\u675F\u5BF9\u8BDD"
+    position: {x: 1197, y: 204}
+  DialogueGraphData:
+  - text: "\u5F00\u59CB\u5BF9\u8BDD"
+    next: 0100000006000000
+    pre: 
+    choices:
+    - "\u5206\u652F1"
+    - "\u5206\u652F2"
+  - text: "\u5206\u652F1 \u5185\u5BB91"
+    next: 02000000
+    pre: 00000000
+    choices: []
+  - text: "\u5206\u652F1 \u5185\u5BB92"
+    next: 0300000005000000
+    pre: 01000000
+    choices:
+    - "\u5206\u652F1-1"
+    - "\u5206\u652F1-2"
+  - text: "\u5206\u652F1-1 \u5185\u5BB91"
+    next: 04000000
+    pre: 02000000
+    choices: []
+  - text: "\u7ED3\u675F\u5BF9\u8BDD"
+    next: 
+    pre: 030000000500000007000000
+    choices: []
+  - text: "\u5206\u652F1-2 \u5185\u5BB91"
+    next: 04000000
+    pre: 02000000
+    choices: []
+  - text: "\u5206\u652F2 \u5185\u5BB91"
+    next: 07000000
+    pre: 00000000
+    choices: []
+  - text: "\u5206\u652F2 \u5185\u5BB92"
+    next: 04000000
+    pre: 06000000
+    choices: []
